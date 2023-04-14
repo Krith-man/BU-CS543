@@ -198,25 +198,25 @@ def run_experiment(JL_lemma, option, input, case, num_repetitions):
             plt.plot(targets, distortion)
             plt.axhline(y=epsilon, color='r', linestyle='--')
             if input is None:
-                plt.savefig("figures/experiment_1/max/vanilla.png")
+                plt.savefig("plots/experiment_1/max/vanilla.png")
             else:
-                plt.savefig("figures/experiment_real_dataset/max/vanilla.png")
+                plt.savefig("plots/experiment_real_dataset/max/vanilla.png")
         elif option == "min":
             plt.ylabel('Minimum Distortion')
             plt.plot(targets, distortion)
             plt.axhline(y=epsilon, color='r', linestyle='--')
             if input is None:
-                plt.savefig("figures/experiment_1/min/vanilla.png")
+                plt.savefig("plots/experiment_1/min/vanilla.png")
             else:
-                plt.savefig("figures/experiment_real_dataset/min/vanilla.png")
+                plt.savefig("plots/experiment_real_dataset/min/vanilla.png")
         elif option == "mean":
             plt.ylabel('Mean Distortion')
             plt.plot(targets, distortion)
             plt.axhline(y=epsilon, color='r', linestyle='--')
             if input is None:
-                plt.savefig("figures/experiment_1/mean/vanilla.png")
+                plt.savefig("plots/experiment_1/mean/vanilla.png")
             else:
-                plt.savefig("figures/experiment_real_dataset/mean/vanilla.png")
+                plt.savefig("plots/experiment_real_dataset/mean/vanilla.png")
 
     elif JL_lemma == "achlioptas":
         for target in targets:
@@ -231,42 +231,42 @@ def run_experiment(JL_lemma, option, input, case, num_repetitions):
             plt.axhline(y=epsilon, color='r', linestyle='--')
             if input is None:
                 if case == 1:
-                    plt.savefig("figures/experiment_1/max/achlioptas_case_0.png")
+                    plt.savefig("plots/experiment_1/max/achlioptas_case_0.png")
                 else:
-                    plt.savefig("figures/experiment_1/max/achlioptas_case_1.png")
+                    plt.savefig("plots/experiment_1/max/achlioptas_case_1.png")
             else:
                 if case == 1:
-                    plt.savefig("figures/experiment_real_dataset/max/achlioptas_case_0.png")
+                    plt.savefig("plots/experiment_real_dataset/max/achlioptas_case_0.png")
                 else:
-                    plt.savefig("figures/experiment_real_dataset/max/achlioptas_case_1.png")
+                    plt.savefig("plots/experiment_real_dataset/max/achlioptas_case_1.png")
         elif option == "min":
             plt.ylabel('Minimum Distortion')
             plt.plot(targets, distortion)
             plt.axhline(y=epsilon, color='r', linestyle='--')
             if input is None:
                 if case == 1:
-                    plt.savefig("figures/experiment_1/min/achlioptas_case_0.png")
+                    plt.savefig("plots/experiment_1/min/achlioptas_case_0.png")
                 else:
-                    plt.savefig("figures/experiment_1/min/achlioptas_case_1.png")
+                    plt.savefig("plots/experiment_1/min/achlioptas_case_1.png")
             else:
                 if case == 1:
-                    plt.savefig("figures/experiment_real_dataset/min/achlioptas_case_0.png")
+                    plt.savefig("plots/experiment_real_dataset/min/achlioptas_case_0.png")
                 else:
-                    plt.savefig("figures/experiment_real_dataset/min/achlioptas_case_1.png")
+                    plt.savefig("plots/experiment_real_dataset/min/achlioptas_case_1.png")
         elif option == "mean":
             plt.ylabel('Mean Distortion')
             plt.plot(targets, distortion)
             plt.axhline(y=epsilon, color='r', linestyle='--')
             if input is None:
                 if case == 1:
-                    plt.savefig("figures/experiment_1/mean/achlioptas_case_0.png")
+                    plt.savefig("plots/experiment_1/mean/achlioptas_case_0.png")
                 else:
-                    plt.savefig("figures/experiment_1/mean/achlioptas_case_1.png")
+                    plt.savefig("plots/experiment_1/mean/achlioptas_case_1.png")
             else:
                 if case == 1:
-                    plt.savefig("figures/experiment_real_dataset/mean/achlioptas_case_0.png")
+                    plt.savefig("plots/experiment_real_dataset/mean/achlioptas_case_0.png")
                 else:
-                    plt.savefig("figures/experiment_real_dataset/mean/achlioptas_case_1.png")
+                    plt.savefig("plots/experiment_real_dataset/mean/achlioptas_case_1.png")
     elif JL_lemma == "cohen":
         for target in targets:
             result = 0
@@ -279,25 +279,25 @@ def run_experiment(JL_lemma, option, input, case, num_repetitions):
             plt.plot(targets, distortion)
             plt.axhline(y=epsilon, color='r', linestyle='--')
             if input is None:
-                plt.savefig("figures/experiment_1/max/cohen.png")
+                plt.savefig("plots/experiment_1/max/cohen.png")
             else:
-                plt.savefig("figures/experiment_real_dataset/max/cohen.png")
+                plt.savefig("plots/experiment_real_dataset/max/cohen.png")
         elif option == "min":
             plt.ylabel('Minimum Distortion')
             plt.plot(targets, distortion)
             plt.axhline(y=epsilon, color='r', linestyle='--')
             if input is None:
-                plt.savefig("figures/experiment_1/min/cohen.png")
+                plt.savefig("plots/experiment_1/min/cohen.png")
             else:
-                plt.savefig("figures/experiment_real_dataset/min/cohen.png")
+                plt.savefig("plots/experiment_real_dataset/min/cohen.png")
         elif option == "mean":
             plt.ylabel('Mean Distortion')
             plt.plot(targets, distortion)
             plt.axhline(y=epsilon, color='r', linestyle='--')
             if input is None:
-                plt.savefig("figures/experiment_1/mean/cohen.png")
+                plt.savefig("plots/experiment_1/mean/cohen.png")
             else:
-                plt.savefig("figures/experiment_real_dataset/mean/cohen.png")
+                plt.savefig("plots/experiment_real_dataset/mean/cohen.png")
 
 
 if __name__ == '__main__':
