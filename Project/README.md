@@ -17,3 +17,5 @@ For real dataset plots, run the real dataset script as follows:
 
 For exploring Achlioptas plots, run the explore Achlioptas script as follows: 
 > python explore_achlioptas.py
+
+All the plots will be generated under the figures folder inside sub folders with the proper naming for each experiment that was conducted.
