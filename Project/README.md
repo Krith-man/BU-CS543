@@ -10,10 +10,10 @@ To install them under pip you need to follow the command:
 The following lines provide you a description of how to run all the experiments of the project.
 
 For synthetic dataset plots, run the synthetic dataset script as follows: 
-> python synthetic dataset.py
+> python synthetic_dataset.py
 
 For real dataset plots, run the real dataset script as follows: 
-> python real dataset.py
+> python real_dataset.py
 
 For exploring Achlioptas plots, run the explore Achlioptas script as follows: 
-> python explore achlioptas.py
+> python explore_achlioptas.py
